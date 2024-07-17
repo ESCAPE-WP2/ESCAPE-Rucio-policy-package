@@ -58,7 +58,7 @@ jobs:
 
     environment:
       name: release
-      url: https://test.pypi.org/p/testpypi-escape-rucio-policy-package
+      url: https://test.pypi.org/p/escape-rucio-policy-package
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
