@@ -9,6 +9,7 @@ authors = [
     { name="ESCAPE CERN", email="escape-cern@cern.ch" },
 ]
 description = "Rucio policy package for the ESCAPE collaboration"
+readme="README.md"
 requires-python = ">=3.9"
 classifiers = [
    "Programming Language :: Python :: 3",
