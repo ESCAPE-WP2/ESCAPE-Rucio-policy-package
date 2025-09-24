@@ -687,10 +687,14 @@ def perm_add_replicas(issuer, kwargs, *, session: "Optional[Session]" = None):
     :param session: The DB session to use
     :returns: True if account is allowed, otherwise False
     """
-    return str(kwargs.get('rse', '')).endswith('SCRATCHDISK')\
-        or str(kwargs.get('rse', '')).endswith('USERDISK')\
+    return str(kwargs.get('rse', '')).endswith('CERN-EOSPILOT')\
+        or str(kwargs.get('rse', '')).endswith('CNAF-STORM')\
+        or str(kwargs.get('rse', '')).endswith('DESY-DCACHE')\
+        or str(kwargs.get('rse', '')).endswith('IN2P3_LAPP-DCACHE')\
+        or str(kwargs.get('rse', '')).endswith('INFN_NAPOLI-DCACHE')\
+        or str(kwargs.get('rse', '')).endswith('PIC-DCACHE')\
         or str(kwargs.get('rse', '')).endswith('MOCK')\
-        or str(kwargs.get('rse', '')).endswith('LOCALGROUPDISK')\
+        or str(kwargs.get('rse', '')).endswith('CESNET-S3')\
         or _is_root(issuer)\
         or has_account_attribute(account=issuer, key='admin', session=session)
 
