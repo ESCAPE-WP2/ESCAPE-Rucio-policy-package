@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "escape_rucio_policy_package"
-version = "0.2.1"
+version = "0.2.2"
 authors = [
-    { name="ESCAPE CERN", email="escape-cern@cern.ch" },
+    { name="ESCAPE CERN", email="escape-cern-ops@cern.ch" },
 ]
 description = "Rucio policy package for the ESCAPE collaboration"
 readme="README.md"
@@ -17,4 +17,4 @@ classifiers = [
 ]
 
 [tool.setuptools]
-py-modules = []
+packages = ["escape_rucio_policy_package"]
